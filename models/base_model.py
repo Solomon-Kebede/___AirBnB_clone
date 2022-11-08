@@ -19,3 +19,9 @@ class BaseModel:
 			self.__class__.__name__,
 			self.id,
 			self.__dict__)
+
+
+	def save(self):
+		"""Update the public instance attrribute
+		updated_at with current datetime"""
+		self.updated_at = datetime.now()
