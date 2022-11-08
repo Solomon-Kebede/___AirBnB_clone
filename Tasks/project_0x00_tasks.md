@@ -11,7 +11,22 @@ Write a `README.md`:
 -You should have an `AUTHORS` file at the root of your repository, listing all individuals having contributed content to the repository. For format, reference Docker’s `[AUTHORS page](https://github.com/moby/moby/blob/master/AUTHORS)`
 -You should use branches and pull requests on GitHub - it will help you as team to organize your work
 
-# Task 3
+# Task 2. Unittests 
+
+All your files, classes, functions must be tested with unit tests
+
+**Incomplete**
+
+```sh
+python3 -m unittest discover tests
+```
+
+Unit tests must also pass in non-interactive mode:
+
+```sh
+echo "python3 -m unittest discover tests" | bash
+```
+# Task 3. BaseModel 
 
 Write a class `BaseModel` that defines all common attributes/methods for other classes:
     -`models/base_model.py`
